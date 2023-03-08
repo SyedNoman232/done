@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch statement</title>
+</head>
+<body>
+    <center><h1>SWITCH STATEMENT</h1>
+    <qoute>The switch statement executes a block of code depending on different cases. The switch statement is a part of JavaScript's "Conditional" Statements, which are used to perform different actions based on different conditions. Use switch to select one of many blocks of code to be executed.</qoute></center>
+    <script>
+        document.write("try number 0 to 6 and get the result<br>")
+        var day = 1 ;// 0 to 6 valid day number assigned
+        
+        switch(day) {
+            case 0:
+                   document.write("today is monday<br><br>bcoz you try 0");
+            break;  //  break is use to not print any other day      
+            case 1:
+                   document.write(" today is tuesday<br><br>bcoz you try 1");
+                
+            break;
+            case 2:
+                   document.write(" today is wednesday<br><br>bcoz you try 2");
+            break;
+            case 3:
+                   document.write(" today is thursday<br><br>bcoz you try 3");
+            break;
+            case 4:
+                   document.write(" today is friday<br><br>bcoz you try 4");
+            break;       
+            case 5:
+                   document.write(" today is saturday<br><br>bcoz you try 5");
+            break; 
+            case 6: 
+                   document.write(" today is sunday<br><br>bcoz you try 6");   
+            break;
+        default:
+                   document.write(" inter the valid day number<br><br>bcoz you try more than 6 or less than 0");
+
+        }
+    </script>
+</body>
+</html>
