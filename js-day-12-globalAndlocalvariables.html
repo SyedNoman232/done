@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>global and local variable</title>
+</head>
+<body>
+    <h1>global and local variable</h1>
+    <qoutes>Global variables are declared outside of a function for accessibility throughout the program, while local variables are stored within a function using var for use only within that function's scope.</qoutes><br><br>
+    <qoutes> var a = 10 ;<-------global variable out side the function.<br><br>
+             function number(){<br><br> var b = 25; <---------local variable in the function.<br>}</qoutes><br><br>
+    <script>
+         var a = "syed noman"
+
+         function hello(){
+            document.write(a,"<br>");
+         }
+
+         hello();
+         hello();
+
+         document.write("<br>[global variable work in outside the function as well as inside the function] ")
+    </script>
+    <script>
+        document.write("<br>[ local variable work  only within the function . ]")
+    </script>
+</body>
+</html>
