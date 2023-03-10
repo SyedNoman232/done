@@ -38,9 +38,23 @@
         document.write(a + b);
        }
        hello("salman","ranbir");
-       
+    </script>
+    <h3>function return value</h3>
+    <qoute>The return statement is used to return a particular value from the function to the function caller. The function will stop executing when the return statement is called. The return statement should be the last statement in a function because the code after the return statement will be unreachable.</qoute>
+    <script>
+        // now we try to use functions with the return value.
+        function sum(math,english,sci){
+            var subject = math + english + sci;
 
+            return subject;
+        }
+         function percentage(tt){
+            var per=tt/300*100;
+            document.write(per);
+         }
+        var total = sum(55,65,75);
 
+        percentage(total);
     </script>
 </body>
 </html>
