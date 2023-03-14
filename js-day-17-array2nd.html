@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 2nd tutorial</title>
+</head>
+<body>
+    <h1>another way to creat array</h1>
+    <qoute>new constructor method of array is follows<br><br> var a = new Array();</qoute>
+    <script>
+         var a = new Array();
+
+
+         a[0] = 10;
+         a[1] = "noman";
+         a[2] = "imran";
+         a[3] = "juned";
+         a[4] = "noor";
+         a[5] = true;
+         document.write("<ul>");
+            for(var i = 0; i < 6; i++){
+                document.write("<li>" + a[i] + "</li>");
+            }
+            document.write("</ul>");
+        // now example of how can we get information from the user
+        var b = new Array();
+        for (var g = 0; g < 3; g++){
+            b[g] = prompt("Enter the value : ");
+        }
+        document.write("<ul>");
+            for(var i = 0; i < 3; i++){
+                document.write("<li>" + b[i] + "</li>");
+            }
+            document.write("</ul>");
+
+        
+    </script>
+</body>
+</html>
