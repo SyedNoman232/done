@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multidiamentional Array</title>
+</head>
+<body>
+    <h1>Multidiamentional array </h1>
+    <qoutes>A multidimensional array is an array of arrays. Multidimensional arrays are useful when you want to store data as a tabular form, like a table with rows and columns.</qoutes><br><br>
+    <script>
+      
+      var students = [
+            ["noman",26,"male","M.sc"],    //0
+            ["imran",30,"male","B.A"],     //1
+            ["fatema",20,"female","BHMS"], //2
+            ["farha",25,"female","d.ed"]   //3
+         ];
+            for(var a = 0; a < 4; a++ ){
+              for(var b=0; b < 4; b++){
+                document.write(students[a][b] + " ");
+              }
+              document.write("<br>");
+            }
+            document.write("<br>")
+         // now data in tabularform
+         
+         var data = [
+            ["noman",26,"male","M.sc"],    //0
+            ["imran",30,"male","B.A"],     //1
+            ["fatema",20,"female","BHMS"], //2
+            ["farha",25,"female","d.ed"]   //3
+         ];
+            document.write(students.length); // you can check
+            document.write("<table border='1px'>");
+            for(var a = 0; a < 4; a++ ){
+                document.write("<tr>");
+              for(var b=0; b < 4; b++){
+                document.write("<td>"+ students[a][b] + "</td>");
+              }
+              document.write("</tr>");
+            }
+            document.write("</table>");
+    </script>
+    
+</body>
+</html>
