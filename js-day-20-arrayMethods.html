@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY METHOD</title>
+</head>
+<body>
+   <center><H1 style="color: rgb(238, 15, 74);">Array Methods</H1>
+    <qouete>Array methods are functions built-in to JavaScript that we can apply to our arrays — Each method has a unique function that performs a change or calculation to our array and saves us from writing common functions from scratch.</qouete>
+   </center>
+     <ul>
+        <li>
+            sort() ,
+            reverse() ,
+            pop() ,
+            push() ,
+            shift() ,
+            unshift() ,
+            concat() ,
+            join() ,
+            slice() ,
+            splice() ,
+            isArray() ,
+            indexOf() ,
+            lastIndex() ,
+            entries() ,
+            every() ,
+            filter() ,
+            find() ,
+            findIndex() ,
+            includes() ,
+            some() ,
+            forEach() ,
+            toString() ,
+            valueOf() ,
+            fill() ,
+        </li>
+    </ul>
+
+     <script>
+        document.write("SORT <-----in alpahbetical order <br><br>");
+           var a = ["salman","sharooq","amir","amitab","dilipkumar"];
+                   document.write(a + "<br>"); // befor the sort
+                     a.sort();
+                   document.write(a + "<br><br>"); //after the sort
+        document.write("REVERSE<br><br>");
+           var a = ["salman","sharooq","amir","amitab","dilipkumar"];
+                   document.write(a,"<br>");
+                     a.reverse();
+                   document.write(a + "<br><br>");
+        document.write("POP <-----delete last value<br>");
+           var b = ["amar","akbar","anthony"];
+                   document.write(b,"<br>");
+                    b.pop();
+                   document.write(b,"<br><br>");
+                  
+        document.write("PUSH <-----Add last value<br>");
+           var b = ["amar","akbar","anthony"];
+                   document.write(b,"<br>");
+                    b.push("movie,old song");
+                   document.write(b,"<br><br>");
+        document.write("SHIFT <-----Delet first  value<br>");
+           var c = ["book","paper","pen"];
+                   document.write(c,"<br>");
+                    c.shift();
+                   document.write(c,"<br><br>");
+        document.write("UNSHIFT <-----add  first  value<br>");
+           var c = ["book","paper","pen"];
+                   document.write(c,"<br>");
+                    c.unshift("page");
+                   document.write(c,"<br><br>");
+        document.write("CONCAT <-----MERGE TWO VARIABLE in one <br>");
+           var d = ["book","paper","pen"];
+                   document.write(d,"<br>");
+                   var e = d.concat("bag,tiffin");
+                   document.write(e,"<br><br>");
+        document.write("JOIN <-----MERGE TWO VARIABLE in one string <br>");
+           var d = ["book","paper","pen"];
+                   document.write(d,"<br>");
+                   var e = d.join(" //"); // you can add any symbol in between these value
+                   document.write(e,"<br><br>");
+        document.write("SLICE <-----in one array pick the value make new array <br>");
+           var e = ["upper","dipper","focus","power","cable"];
+                   document.write(e,"<br>");
+                  var f = e.slice(3,5); // you can add any symbol in between these value
+                   document.write(f,"<br><br>");
+        document.write("SPLICE <-----in one array pick the value and add the string in middle <br>");
+           var g = ["apple","sony","samsung","oppo","lava"];
+                   document.write(g,"<br>");
+                   g.splice(4,0,"mi","poco"); // you can add string to extend variable
+                   document.write(g,"<br><br>");
+        document.write("isArray  <------to check the variable is array or no<br>")
+            var t = ["mango","apple","peach","banana"];
+                    document.write(t,"<br>");
+                    if(Array.isArray(t)){
+                        document.write("this is array");
+                    } else{
+                        documen.write("this is not array");
+                    }
+       
+
+
+                    
+
+
+
+           
+        
+
+     </script>
+    
+</body>
+</html>
