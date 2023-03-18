@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <center><h1>Objects</h1>
+    <qoute>In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.</qoute><br><br>
+   <marquee> <qoute> OBJECT IS ADVANCE VERSION OF ARRAY</qoute></marquee></center>
+   <h2> var a = {<br>firstName:"syed",<br>lastName:"noman ali",<br>age:25,<br>country:"india"<br>};</h2>
+ <ul>
+    <li>store value with index name  or have property</li>
+    <li>you can add array in object</li>
+    <li>you can make multiple function or methods</li>
+ </ul>
+   
+<script>
+    var a = {
+        fname : "syed",
+        lastName : "noman ali",
+        email : "sdnoman232@gmail.com",
+        age :25,
+        favMovies :["sholy","masan","kai po che"],//array in object
+        salary : function(){                      //function in object
+            return 25000;
+        },
+        fullName : function(){
+            return this.fname + " " + this.lastName;
+        }
+    }
+    
+    
+    console.log(a);
+    document.write(a.lastName);
+    document.write(a.favMovies);
+    document.write(a.salary());
+    document.write(a.fullName());
+
+
+
+
+</script>
+</body>
+</html>
