@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array of Objects</title>
+</head>
+<body><h1 style="background-color: aquamarine;"> Array Of Object</h1>
+    <quote>An array in javascript is the collection of multiple types of data at a single place in order, and an array of objects in javascript is a collection of homogenous data, that stores a sequence of numbered objects at a single place. </quote><br><br>
+    <script>
+            var student = [
+                {name :"syed noman",age :24},
+                {name :"sharooq",age :25},
+                {name :"ajay",age :26},
+                {name :"salman",age :27},
+            ];
+
+            console.log(student); 
+             for(var a=0;a< student.length;a++){
+                document.write(student[a].name +"  " + "<br>");
+             }
+
+    </script>
+    
+</body>
+</html>
