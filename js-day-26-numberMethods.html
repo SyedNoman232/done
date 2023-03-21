@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number methods</title>
+</head>
+<body style="background-color: aquamarine;">
+    <center><h1 style="color: blue;">The Number() method converts a value to a number. If the value cannot be converted, NaN is returned.</h1></center>
+    <qoutes>following are the list of number methods</qoutes>
+    <ul>
+        <li>nmber()</li>
+        <li>parselnt()</li>
+        <li>parseFloat()</li>
+        <li>isFinite()</li>
+        <li>isInteger()</li>
+        <li>toFixed(x)</li>
+        <li>toPrecision(x)</li>
+
+    </ul>
+    <script>
+        var a = "100";
+
+        var b = Number(a); // number method 
+        document.write(b + 10,"<br>");
+
+
+
+        var c = "22,34,500";
+
+        var d = parseInt(c);
+         document.write(d, "<br>");// parsint show first value
+         
+        
+         var e = "13,23,78,80,11.30";
+
+         var f = parseFloat(e);
+         document.write(f,"<br>");
+
+
+         var g = "impossible";// return the true false
+         var h = isFinite(g);
+
+         document.write(h,"<br>");
+
+         var i = 100;
+         var j =Number.isInteger(i);
+
+         document.write(j,"<br>");
+
+         var k = 1.827;
+         var l =  k.toFixed(2); // it fixed the value
+
+         document.write(l,"<br>");
+
+         var m = 2.99;
+         var o = m.toPrecision(2); // it fixed the value
+
+         document.write(o);
+
+
+    </script>
+</body>
+</html>
