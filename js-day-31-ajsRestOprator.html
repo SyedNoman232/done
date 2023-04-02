@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest oprator</title>
+   
+</head>
+
+<body style="background-color: aquamarine;">
+    <h1>The rest operator in javaScript allows a function to take an indefinite number of arguments and bundle them in an array, thus allowing us to write functions that can accept a variable number of arguments, irrespective of the number of parameters defineds</h1>
+    <script>
+        function sum(name,course, ...take){
+
+            document.write(`hello ${name}  of ${course} : `);
+         let sum = 0;
+         for (let i in take){
+            sum += take[i];
+         }
+         document.write(sum,"<br>");
+        }
+        sum("syed","MSC",23,45,56);
+        sum("NOMAN ALI","BCOM",2,5,59);
+        sum("noman","Mtech",78,34);
+    </script>
+    
+</body>
+</html>
