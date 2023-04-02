@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+   
+</head>
+<body>
+    <h1>An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage: Arrow functions don't have their own bindings to this , arguments , or super , and should not be used as methods</h1>
+    <qoute> function hello(){<br>console.log("hello");<br>}<br>hello();</qoute>
+    <h2>following the latest methods</h2>
+  <center><qoute> let hello = () => console.log("hello");</qoute></center>
+  <script>
+     let welcome = (name, age) =>{
+        return `hello to youtube welcome my channel ${name} - ${age}`;
+     }
+
+     console.log(welcome("put me down",100));
+
+     console.log(typeof welcome);
+     
+  </script>
+</body>
+</html>
