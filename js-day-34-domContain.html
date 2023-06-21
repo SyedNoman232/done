@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM contain</title>
+    <style>
+        #outer{
+            border-width: 3px;
+            border-radius: 30px;
+            border-color:black ;
+            background-color: aqua;
+            margin: 20px 20px ;
+            padding: 80px 80px ;
+        }
+        #inner1{
+            background-color: orangered;
+            margin: 5px 5px;
+            padding: 30px 30px;
+        }
+        #inner2{
+            background-color: orange;
+            margin: 5px 5px;
+            padding: 30px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        Outer
+        <div id="inner1">
+            Inner1
+            <p> This is the child of outer and sibling of inner2</p>
+        </div>
+        <div id="inner2">
+            Inner2
+            <p> This is the child of outer and sibling of inner1</p>
+            <div id="inner3">
+                Inner3
+                <p> This is the GRANDchild of outer and CHILD  of inner2</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script>
+    var parent = document.getElementById("outer")
+    var child = document.getElementById("inner1","inner2")
+    var grandchild = document.getElementById("inner3")
+
+    var find = parent.contains(child);
+    console.log(find)
+    
+</script>
+</html>
