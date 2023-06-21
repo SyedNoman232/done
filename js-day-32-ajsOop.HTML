@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT ORIENTD PROGRAMING</title>
+</head>
+<body style="background-color: aquamarine;">
+    <h1>OBJECT ORIENTD PROGRAMING</h1>
+    <qoute>A style of Object-oriented programming (OOP) in which inheritance occurs via defining classes of objects, instead of inheritance occurring via the objects alone. The most popular model of OOP is class-based. But as I mentioned, JavaScript isn't a classed-based langauge – it's is a prototype-based langauge</qoute>
+
+    <ul style="font-style: italic;">
+       <li>code more modular and reusable</li>
+       <li>well organised code</li>
+       <li>Easier to debug</li>
+       <li>Best for medium to large website projects</li>
+    </ul>
+    <h2>class</h2>
+    <qoute1>In object-oriented programming, a class is a template definition of the methods and variables in a particular kind of object. Thus, an object is a specific instance of a class; it contains real values instead of variables. The class is one of the defining ideas of object-oriented programming<br><br>.</qoute1>
+    <script>
+         class hello{//this is class
+            message(){//method
+                console.log("HELLO EVERY ONE");
+            }
+            sorry(){//method
+                console.log("sorry every one");
+            }
+         }
+
+         let a = new hello(); //this is object  
+
+         a.message();  //this is method
+         a.sorry();
+document.write("<b>Types of method</b><br><br>contructor<br>prototype<br>static");
+
+        class student{
+            constructor(){
+                let name;
+                console.log("this is contructor function");
+            }
+
+            hello(){
+                console.log("hello " + this.name)
+            }
+
+        }
+
+        let b = new student();
+        
+        let c = new student();
+        a.name = "syed noman";
+        
+    </script>
+</body>
+</html>

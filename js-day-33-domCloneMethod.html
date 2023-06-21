@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom clone method</title>
+    <style>
+        div{
+            align-self: center;
+            background-color: aqua;
+            width: rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul id="list1">
+        <li>orange</li>
+        <li>banana</li>
+        <li>apple</li>
+        <li>tomato</li>
+    </ul>
+    <ul id="list2">
+        <li>methi</li>
+        <li>bhendi</li>
+    </ul>
+    <div id="div"></div>
+</body>
+<script>
+ var target = document.getElementById("list1").children[3];
+ var copyElement = target.cloneNode(true)
+ console.log(copyElement);
+ document.getElementById("list2").appendChild(copyElement);
+
+ var target = document.getElementById("list1").childNodes[3];
+ var copyElement = target.cloneNode(true);
+ console.log(copyElement);
+ document.getElementById("div").appendChild(copyElement);
+</script>
+</html>
