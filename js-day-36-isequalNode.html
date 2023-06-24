@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS equal node</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <ul id="list-1">
+        <li class="">Orange</li>
+        <li>apple</li>
+        <li>banana</li>
+        <li>grapes</li>
+    </ul>
+    <ul id="list-2">
+        <li>apple</li>
+        <li class="">Orange</li>
+        <li>pineapple</li>
+    </ul>
+</body>
+<script>
+ var target1 =document.getElementById("list-1").firstElementChild;
+ var target2 =document.getElementById("list-2").firstElementChild;
+ var target3 =document.getElementById("list-2").children[1];
+ var target4 =document.getElementById("list-2").firstElementChild;
+ 
+ var equal = target1.isEqualNode(target3)
+ console.log(equal)
+</script>
+</html>
