@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+</head>
+<body>
+    <form action="" onsubmit="submitFunction()">
+        <label for="">Name</label> <input type="text" id="fname" onfocus="focusFunction(this)" onblur="onblurFunction(this)" oninput="inputFunction(this)" oninvalid="alert('please name is must first fill')" required> <br><br>
+
+        <label for="">Class</label> <input type="text" id="" onfocus="focusFunction(this)"  onblur="onblurFunction(this)"> <br><br>
+
+        <label for="">Country</label>
+        <select id="" onfocus="focusFunction(this)" onblur="onblurFunction(this)">
+            <option value="">India</option>
+            <option value="">Bangladesh</option>
+            <option value="">Pakistan</option>
+            <option value="">Sri Lanka</option>
+            <option value="">Nepal</option>
+            <option value="">none</option>
+        </select>
+        <br><br>
+        <input type="submit"> 
+    </form>
+    <div id="test" style="border: 1px solid red;"></div>
+</body>
+<script>
+ function focusFunction(para){
+    para.style.background = "lightgreen"
+ }
+ function onblurFunction(para2){
+    para2.style.background = "lightgray"
+ }
+ function inputFunction(second){
+     var x = second.value;
+     document.getElementById("test").innerHTML = x
+ }
+// in this we work only this function
+ function submitFunction(){
+    var x = document.getElementById("fname").value
+    console.log("hello " + x);
+ }
+
+ // how invalid work 
+</script>
+</html>
