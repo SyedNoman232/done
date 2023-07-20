@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinterval</title>
+    <style>
+        #test { 
+            width: 150px;
+            height: 150px;
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test"></div>
+    
+</body>
+<script>
+    var a = 0;
+var id = setInterval(cube, 100);
+
+function cube(){
+    a = a + 10;
+    
+    if(a == 600){
+
+    clearInterval(id);
+
+    }else{
+        var target = document.getElementById("test");
+        
+        target.style.marginLeft = a + 'px';
+    }
+    
+}
+</script>
+</html>
