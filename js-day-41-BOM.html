@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+    <style>
+        #div{
+            border: 2px solid black;
+            padding:5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onresize="resizeFunction()">
+   <div id="div"> 
+    <h1>METHODS IN BOM</h1>
+    <ul>we can get width and hight browser window</ul>
+    <ul>open and close browser window</ul>
+    <ul>move and resize the window </ul>
+    <ul>get url hostname , protocol of browser window </ul>
+    <ul>scroll the window</ul>
+    <ul> get history browser window</ul>
+</div>
+<br>
+<center>
+    <button onclick="openWindow()">GO TO THE shutter</button>
+    <button onclick="closeWindow()">close the shutter</button>
+</center>
+</body>
+<script>
+    // inner and outer height
+    function resizeFunction(){ // used the function auto resize the height
+        console.clear();
+     var iHeight = window.innerHeight;
+     console.log('inner height is : ' + iHeight);
+
+     var oHeight = window.outerHeight;
+     console.log('outer height is : ' + oHeight);
+
+     var iWidth = window.innerWidth;// here used to check width inner and outer
+     console.log('inner width is : ' + iWidth);
+
+     var owidth = window.outerWidth;
+     console.log('outer width is : ' + owidth);
+    }
+       
+    var myWindow;
+
+    function openWindow(){// NEW WINDOW OPEN BY BUTTON
+     myWindow = window.open("https://www.shutter.com","","width=500px,height=200px");
+    }
+
+    function closeWindow(){
+        myWindow.close();
+    }
+    
+</script>
+</html>
