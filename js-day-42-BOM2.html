@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bom Methods 2</title>
+    <style>
+        p{
+            font-size: larger;
+            color: rgb(11, 87, 112);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            background-color:#4CAF50 ;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>move by and move to Methods</h1>
+    <button onclick="moveWindow()">move to</button>
+    <button onclick="closeWindow()">close window</button>
+    <button onclick="openWindow()">open window</button>
+    <button onclick="resizeWindow()">resize</button>
+    <button onclick="scrollWindow()">scroll</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Maiores cupiditate distinctio quaerat natus vel ab, nemo ad perspiciatis,<br> culpa eligendi eum officiis maxime necessitatibus.<br> Vero distinctio tempora quibusdam harum illo.</p>
+   
+</body>
+<script>
+    var myWindow;
+
+function openWindow(){
+    myWindow = window.open("","","width=500px,height=200px");
+    myWindow.document.write("this is my window  <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusamus recusandae quibusdam deserunt eligendi, reprehenderit quam ab sequi aspernatur corrupti ipsa laborum esse similique veniam maxime voluptas eaque dolorem exercitationem. Obcaecati suscipit nulla repellendus sed ut consectetur autem exercitationem soluta illo neque alias, error perferendis voluptatum libero? Impedit adipisci dolor suscipit corporis nihil iure facere consequuntur architecto omnis minima modi tempora distinctio, asperiores explicabo obcaecati ab iusto praesentium nostrum quidem maxime, quisquam ullam? Autem, error. Ab laudantium suscipit assumenda corporis ex, delectus repellat deserunt reprehenderit nemo itaque quaerat voluptate, unde nam fugit labore cumque doloremque fuga, cupiditate tempore illum dignissimos mollitia harum amet! Omnis blanditiis ipsum architecto veniam obcaecati voluptates. Ratione animi deleniti tenetur, quidem dicta quia ipsam sed ea consectetur. Cumque facilis dicta nostrum aperiam dolorem assumenda sequi eos exercitationem rerum enim, nihil illum atque quo ea dolor, itaque minima et consectetur? Voluptate consequuntur obcaecati commodi ullam, vel fugit dolores placeat, deleniti necessitatibus eum repellat, illum hic aut quis alias eligendi nesciunt voluptatem asperiores non debitis sequi neque consectetur! Sapiente dolore velit atque numquam voluptatem eveniet ea labore, excepturi ratione tenetur similique soluta fugit cum obcaecati odio dolores? Provident quasi similique maiores officia blanditiis odio voluptas eligendi nihil harum, esse ipsum! In debitis culpa dolores ut ratione totam recusandae fugiat, sint animi explicabo vitae soluta magnam eos eum ex blanditiis autem odio voluptate illum repellendus corrupti dolorum velit officia maxime! Quidem, enim quia unde nemo perspiciatis doloribus qui aliquam consequuntur aspernatur ducimus modi illo similique rerum porro, quaerat vero sapiente hic. Aliquam, vel ad quos laborum, doloribus modi sit odio architecto, fugit ullam non adipisci accusamus. Sint dignissimos veniam, nostrum ipsum autem delectus! Quam impedit, laborum deserunt nisi ullam assumenda tenetur voluptatum iusto aliquid rerum quidem est laboriosam corporis! Laudantium, laborum ullam incidunt rem iste exercitationem, animi ipsum deleniti sint recusandae est optio. A beatae culpa similique officia quos necessitatibus eum laboriosam voluptates iure, ad dolores quasi possimus! Exercitationem deserunt corrupti, eaque reiciendis tempore repellat, ad praesentium aspernatur vel quisquam, voluptatem unde ratione quos doloremque. Non consequuntur natus quidem, quam voluptatem ut corporis ducimus accusantium adipisci quis, perspiciatis culpa. Odio quos illum eaque ratione, neque vel sint voluptatum veritatis molestiae soluta dolores sequi inventore enim minima libero aspernatur necessitatibus incidunt voluptatem rem numquam. Libero quaerat minus eligendi suscipit! Libero nisi, velit deserunt a odit exercitationem explicabo qui ipsum impedit reiciendis minima. Id corporis molestias, cupiditate sit vel ipsam impedit ut corrupti quaerat ullam officiis, dignissimos voluptate aliquam soluta illum tenetur ex, cumque ipsa modi mollitia saepe ducimus consequatur temporibus. Distinctio repellat molestias repellendus eius, numquam laborum odio minima? Est nobis nisi atque cum quisquam, suscipit eius necessitatibus vero sint omnis, magni et temporibus, quod non commodi quidem ipsam veniam beatae. Maxime odit ipsam quo ab! Magnam recusandae beatae minima eos, incidunt officia deleniti repellendus eum, exercitationem dolorum cumque, doloremque quis ipsa? Corrupti cumque soluta adipisci quaerat et ea enim fugiat unde accusantium, delectus earum repellendus. Ratione at esse ducimus, vel a nesciunt ipsam recusandae magnam! A nam sapiente rerum!</p2>")
+}
+function closeWindow(){
+    myWindow.close();
+}
+function moveWindow(){
+    //myWindow.moveTo(100,100)
+    myWindow.moveBy(500,300)
+    myWindow.focus();
+}
+// resize by and resize to
+        function resizeWindow(){
+            myWindow.resizeBy(200,700)
+        }
+// scroll by and scroll to
+function scrollWindow(){
+    myWindow.scrollBy(0,20)
+}
+</script>
+</html>
