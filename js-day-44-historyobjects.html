@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history object</title>
+</head>
+<body>
+    <button onclick="toBack()">back</button>
+    <button onclick="toForward()">forward</button>
+    <button onclick="toGo()">GO</button>
+</body>
+<script>
+    // for working following function have to open diffren back and forward pages in the same window 
+    //then it will work
+    function toBack(){
+        history.back()
+    }
+
+    function toForward(){
+        history.forward();
+    }
+
+    function toGo(){
+        history.go(-1)
+    }
+</script>
+</html>
