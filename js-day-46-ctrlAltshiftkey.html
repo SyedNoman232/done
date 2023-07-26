@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ctrl key alt shift </title>
+    <style>
+        #box {
+            border: 20px solid;
+            height: 200px;
+            width: 300px;
+            background-color: yellowgreen;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+   <div id="box"></div> 
+</body>
+<script>
+    var target = document.querySelector('#box');
+    target.addEventListener('click', function(e){
+        console.clear()
+    //     var ctrl = e.ctrlKey;
+    //     if(ctrl){
+    //         console.log("you clicked on ctrl")
+    //     }else{
+    //         console.log("you not clicked on ctrl")
+    //         };
+    //         var shift = e.shiftKey;
+    //     if(shift){
+    //         console.log("you clicked on shift")
+    //     }else{
+    //         console.log("you not clicked on shif")
+    //     }
+    // 
+
+// smililar by using switch case with three all keys
+var k;
+            switch (true){
+                case e.metaKey:
+                    k = "meta key";
+                    break;
+                case e.ctrlKey:
+                    k = "ctrl key";
+                    break;
+                case e.altKey:
+                    k = "alt Key";
+                    break;
+                case e.shiftKey:
+                    k = "shift key";
+                    break;
+                default:
+                    k ="you not pressed ctrl shift and window key";
+                    break;
+            };
+            console.log(k);
+        });
+            
+
+</script>
+</html>
